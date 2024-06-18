@@ -1,0 +1,82 @@
+.lead {
+  margin: 0 11.6% 0;
+  max-width: 793px;
+  text-align: center;
+}
+
+.lead__title {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.04;
+}
+
+.lead__description {
+  max-width: 720px;
+  margin: 32px 9.6% 0;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.content__image {
+  max-width: 100%;
+  margin: 64px auto 0;
+}
+
+/*------- Consulta midia MEDIA -------*/
+@media screen and (max-width: 768px) {
+  .lead {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3.2% 0;
+    align-items: center;
+  }
+
+  .lead__title {
+    max-width: 520px;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 1.05;
+  }
+
+  .lead__description {
+    max-width: 720px;
+    margin: 32px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .content__image {
+    margin: 40px 0 0;
+  }
+}
+
+/*------- Consulta midia PEQUENA -------*/
+
+@media screen and (max-width: 320px) {
+  .lead {
+    margin: 0 11.6% 0;
+    max-width: 793px;
+    text-align: center;
+  }
+
+  .lead__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  .lead__description {
+    max-width: 720px;
+    margin: 32px 9.6% 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .content__image {
+    margin: 40px 0 0;
+  }
+}
