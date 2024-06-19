@@ -30,7 +30,6 @@
 }
 
 /*------- Consulta midia MEDIA -------*/
-
 @media screen and (max-width: 1024px) {
   .intro {
     margin: 0 3.2%;
@@ -54,7 +53,6 @@
 }
 
 /*------- Consulta midia PEQUENA -------*/
-
 @media screen and (max-width: 544px) {
   .intro {
     margin: 0 5%;
