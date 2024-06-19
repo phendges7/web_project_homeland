@@ -19,11 +19,6 @@
   line-height: 1.2;
 }
 
-.content__image {
-  max-width: 100%;
-  margin: 64px auto 0;
-}
-
 /*------- Consulta midia MEDIA -------*/
 @media screen and (max-width: 1024px) {
   .lead {
@@ -47,10 +42,6 @@
     font-size: 30px;
     line-height: 1.2;
   }
-
-  .content__image {
-    margin: 40px 0 0;
-  }
 }
 
 /*------- Consulta midia PEQUENA -------*/
@@ -72,9 +63,5 @@
     margin: 0;
     font-size: 16px;
     line-height: 1.25;
-  }
-
-  .content__image {
-    margin: 40px 0 0;
   }
 }
