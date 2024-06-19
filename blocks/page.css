@@ -11,9 +11,3 @@ body {
   line-height: 1.02;
   color: #fff;
 }
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
