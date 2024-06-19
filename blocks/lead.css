@@ -25,7 +25,7 @@
 }
 
 /*------- Consulta midia MEDIA -------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .lead {
     display: flex;
     flex-direction: column;
@@ -55,25 +55,23 @@
 
 /*------- Consulta midia PEQUENA -------*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 544px) {
   .lead {
-    margin: 0 11.6% 0;
-    max-width: 793px;
+    margin: 0 5% 0;
     text-align: center;
   }
 
   .lead__title {
+    max-width: 275px;
     font-weight: 900;
     font-size: 40px;
-    line-height: 110%;
+    line-height: 1.1;
   }
 
   .lead__description {
-    max-width: 720px;
-    margin: 32px 9.6% 0;
-    font-weight: normal;
+    margin: 0;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
   }
 
   .content__image {

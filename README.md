@@ -42,7 +42,7 @@
 
 # Dependências
 
-## O projeto utiliza a fonte Inter baixada no site oficial .
+## O projeto utiliza a fonte Inter baixada no site oficial https://rsms.me/inter/.
 
 # Autor
 
