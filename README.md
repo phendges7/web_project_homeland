@@ -44,6 +44,8 @@
 
 ## O projeto utiliza a fonte Inter baixada no site oficial https://rsms.me/inter/.
 
+## Link do Website na plataforma GitHub: https://phendges7.github.io/web_project_homeland/
+
 # Autor
 
 ## Pedro Henrique
