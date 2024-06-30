@@ -1,0 +1,56 @@
+.places {
+  margin: 92px 148px 0;
+}
+
+.places__item {
+  max-width: 984px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  column-gap: 40px;
+  row-gap: 48px;
+  grid-template-areas:
+    "title artist"
+    "image paragraph"
+    "image paragraph"
+    "button .";
+}
+
+.places__title {
+  grid-area: title;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+}
+
+.places__artist {
+  grid-area: artist;
+  align-self: flex-end;
+}
+
+.places__artist-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #aaaaaa;
+}
+
+.places__artist-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.places__image {
+  grid-area: image;
+}
