@@ -65,6 +65,13 @@
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
+.places__image:hover {
+  background-color: rgba(0, 0, 0, 75); /* Dark overlay */
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
 .places__button {
   margin-top: 48px;
   max-width: 356px;
@@ -76,6 +83,18 @@
   border: 0;
   text-align: center;
   text-decoration: none;
+}
+
+.places__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  cursor: url(../images/new-pointer.svg), pointer;
 }
 
 .places__button-label {
