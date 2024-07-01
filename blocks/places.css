@@ -3,18 +3,17 @@
 }
 
 .places__item {
-  max-width: 984px;
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
   column-gap: 40px;
-  row-gap: 25px;
+  row-gap: 48px;
   grid-template-areas:
     "title artist"
-    "image paragraph1"
-    "image paragraph2"
-    "image paragraph3";
+    "image paragraph"
+    "button paragraph"
+    ". paragraph";
 }
 
 .places__title {
@@ -53,35 +52,32 @@
   line-height: 1.22;
 }
 
-.places__image-container {
-  grid-area: image;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .places__image {
-  margin-top: 20px;
+  grid-area: image;
+  margin: 0;
+  width: 100%;
+  height: auto;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .places__image:hover {
-  background-color: rgba(0, 0, 0, 75); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 75);
   opacity: 0.5;
   transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
 .places__button {
-  margin-top: 48px;
-  max-width: 356px;
-  max-height: 20px;
-  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: button;
+  width: 356px;
+  height: 48px;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   border: 0;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -105,10 +101,15 @@
   color: #fff;
 }
 
-.places__paragraph {
+.places__paragraphs {
   grid-area: paragraph;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.places__paragraph {
   margin: 0;
-  display: block;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -116,15 +117,81 @@
   line-height: 1.63;
 }
 
-.places__paragraph1 {
-  grid-area: paragraph1;
-  padding-top: 20px;
+/*------- Consulta midia MEDIA -------*/
+
+@media screen and (max-width: 1024px) {
+  .places {
+    margin: 16px 24px 0;
+  }
+
+  .places__item {
+    margin-top: 72px;
+  }
+
+  .places__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .places__image {
+    margin-top: 23px;
+  }
+
+  .places__button {
+    width: 315px;
+    height: 22px;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+  }
 }
 
-.places__paragraph2 {
-  grid-area: paragraph2;
-}
+/*------- Consulta midia PEQUENA -------*/
 
-.places__paragraph3 {
-  grid-area: paragraph3;
+@media screen and (max-width: 544px) {
+  .places {
+    margin: 12px 0 0;
+  }
+
+  .places__item {
+    margin: 50px 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 30px;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+  }
+
+  .places__title {
+    margin: 0 16px;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .places__artist {
+    margin: 0 16px;
+  }
+
+  .places__image {
+    margin: 0;
+  }
+
+  .places__paragraphs {
+    margin: 0 16px;
+  }
+
+  .places__button {
+    margin: 0 16px;
+    width: 288px;
+    height: 48px;
+  }
+
+  .places__button-label {
+    font-size: 14px;
+  }
 }
