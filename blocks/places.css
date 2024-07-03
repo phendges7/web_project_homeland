@@ -144,9 +144,11 @@
   }
 }
 
+/* Visando resolver a disposicao do texto das imagens em resolucoes intermediarias, 
+alterei o threshold da media query, para melhorar a visualizacao do conteudo em screens nao tao pequenas */
 /*------- Consulta midia PEQUENA -------*/
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 720px) {
   .places {
     margin: 12px 0 0;
   }
